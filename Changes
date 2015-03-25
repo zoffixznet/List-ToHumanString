@@ -1,5 +1,9 @@
 Revision history for List-ToHumanString
 
+1.003001   2015-03-24
+        - Converted packaging to Dist::Zilla
+        - Added git repo
+
 1.002   2013-12-05
         - Added a reference to Lingua::Conjunction, after its author
           pointed out to me that such a thing exists.

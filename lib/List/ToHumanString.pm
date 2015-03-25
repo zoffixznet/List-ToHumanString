@@ -4,7 +4,8 @@ use 5.006;
 use strict;
 use warnings;
 
-our $VERSION = '1.002';
+# VERSION
+
 require Exporter;
 our @ISA         = qw(Exporter);
 our @EXPORT      = qw(to_human_string);
@@ -68,6 +69,8 @@ List::ToHumanString - write lists in strings like a human would
 
 =head1 SYNOPSIS
 
+=for pod_spiffy start code section
+
     use List::ToHumanString;
 
     print to_human_string "Report{|s} for |list|\n", qw/March May July/;
@@ -78,6 +81,8 @@ List::ToHumanString - write lists in strings like a human would
 
     print to_human_string "Report{|s} {is|are} needed for |list|\n", qw/March/;
     ## Prints "Report is needed for March";
+
+=for pod_spiffy end code section
 
 =head1 DESCRIPTION
 
@@ -220,82 +225,43 @@ list when using C<to_human_string()> to insert humanized list into the
 string. If set to a true value, the comma
 will be used. B<Defaults to:> C<1> (true value).
 
-=head1 AUTHOR
+=for pod_spiffy hr
 
-Zoffix Znet, C<< <zoffix at cpan.org> >>
+=head1 REPOSITORY
+
+=for pod_spiffy start github section
+
+Fork this module on GitHub:
+L<https://github.com/zoffixznet/List-ToHumanString>
+
+=for pod_spiffy end github section
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-list-tohumanstring at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=List-ToHumanString>.  I will be notified, and then you'll
-automatically be notified of progress on your bug as I make changes.
+=for pod_spiffy start bugs section
 
-=head1 SUPPORT
+To report bugs or request features, please use
+L<https://github.com/zoffixznet/List-ToHumanString/issues>
 
-You can find documentation for this module with the perldoc command.
+If you can't access GitHub, you can email your request
+to C<bug-list-tohumanstring at rt.cpan.org>
 
-    perldoc List::ToHumanString
+=for pod_spiffy end bugs section
 
-You can also look for information at:
+=head1 AUTHOR
 
-=over 4
+=for pod_spiffy start author section
 
-=item * RT: CPAN's request tracker (report bugs here)
+=for pod_spiffy author ZOFFIX
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=List-ToHumanString>
+=for text Zoffix Znet <zoffix at cpan.org>
 
-=item * AnnoCPAN: Annotated CPAN documentation
+=for pod_spiffy end author section
 
-L<http://annocpan.org/dist/List-ToHumanString>
+=head1 LICENSE
 
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/List-ToHumanString>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/List-ToHumanString/>
-
-=back
-
-=head1 LICENSE AND COPYRIGHT
-
-Copyright 2013 Zoffix Znet.
-
-This program is free software; you can redistribute it and/or modify it
-under the terms of the the Artistic License (2.0). You may obtain a
-copy of the full license at:
-
-L<http://www.perlfoundation.org/artistic_license_2_0>
-
-Any use, modification, and distribution of the Standard or Modified
-Versions is governed by this Artistic License. By using, modifying or
-distributing the Package, you accept this license. Do not use, modify,
-or distribute the Package, if you do not accept this license.
-
-If your Modified Version has been derived from a Modified Version made
-by someone other than you, you are nevertheless required to ensure that
-your Modified Version complies with the requirements of this license.
-
-This license does not grant you the right to use any trademark, service
-mark, tradename, or logo of the Copyright Holder.
-
-This license includes the non-exclusive, worldwide, free-of-charge
-patent license to make, have made, use, offer to sell, sell, import and
-otherwise transfer the Package with respect to any patent claims
-licensable by the Copyright Holder that are necessarily infringed by the
-Package. If you institute patent litigation (including a cross-claim or
-counterclaim) against any party alleging that the Package constitutes
-direct or contributory patent infringement, then this Artistic License
-to you shall terminate on the date that such litigation is filed.
-
-Disclaimer of Warranty: THE PACKAGE IS PROVIDED BY THE COPYRIGHT HOLDER
-AND CONTRIBUTORS "AS IS' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
-THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
-PURPOSE, OR NON-INFRINGEMENT ARE DISCLAIMED TO THE EXTENT PERMITTED BY
-YOUR LOCAL LAW. UNLESS REQUIRED BY LAW, NO COPYRIGHT HOLDER OR
-CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR
-CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,
-EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+You can use and distribute this module under the same terms as Perl itself.
+See the C<LICENSE> file included in this distribution for complete
+details.
 
 =cut
